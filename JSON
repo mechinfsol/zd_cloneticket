@@ -1,0 +1,17 @@
+{
+	"ticket":        
+	{
+	"via": {
+		"source": {
+			"from": {
+				"address": "{{ticket.requester.email}}",
+				"name": "{{ticket.requester.name}}"
+				}
+			}
+	},
+	"subject": "{{ticket.title}}",
+	"comment": {"body": "Please click here to see original ticket #{{ticket.id}}\r\rTicker Requester {{ticket.requester.name}}-{{ticket.requester.email}}\r\rTicket Description:\r\r{{ticket.description}}", "public": true},
+	"tags":["to_imd","vendor_merger"]
+	}
+
+}
